@@ -18,9 +18,10 @@ export default function ProductSelector({ onAddItem }: { onAddItem: (item: Quote
           header: true,
           dynamicTyping: true,
           complete: (results) => {
-            setProducts(results.data as Product[]);
+            const parsedProducts = results.data as Product[];
+            setProducts(parsedProducts);
             const initialQuantities: { [key: string]: number } = {};
-            results.data.forEach((product: any) => {
+            parsedProducts.forEach((product: Product) => {
               initialQuantities[product.id] = 1;
             });
             setQuantities(initialQuantities);
