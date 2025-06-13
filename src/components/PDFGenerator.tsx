@@ -70,8 +70,8 @@ interface PDFGeneratorProps {
     clientEmail: string;
     clientPhone: string;
     clientAddress: string;
-    date: string;
-    quoteNumber: string;
+    fecha: string;
+    numero: string;
   };
 }
 
@@ -86,8 +86,8 @@ const PDFGenerator: React.FC<PDFGeneratorProps> = ({ quoteData }) => (
         <Text style={styles.text}>Email: {quoteData.clientEmail}</Text>
         <Text style={styles.text}>Teléfono: {quoteData.clientPhone}</Text>
         <Text style={styles.text}>Dirección: {quoteData.clientAddress}</Text>
-        <Text style={styles.text}>Fecha: {quoteData.date}</Text>
-        <Text style={styles.text}>Número de Cotización: {quoteData.quoteNumber}</Text>
+        <Text style={styles.text}>Fecha: {quoteData.fecha}</Text>
+        <Text style={styles.text}>Número de Cotización: {quoteData.numero}</Text>
       </View>
 
       <View style={styles.section}>
