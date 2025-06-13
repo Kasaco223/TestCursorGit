@@ -1,0 +1,6 @@
+id,nombre,descripcion,precio,unidad,category
+1,Producto A,Descripción del producto A,1000,unidad,Tecnología
+2,Producto B,Descripción del producto B,2000,unidad,Tecnología
+3,Producto C,Descripción del producto C,3000,unidad,Tecnología
+4,Producto D,Descripción del producto D,4000,unidad,Tecnología
+5,Producto E,Descripción del producto E,5000,unidad,Tecnología 
